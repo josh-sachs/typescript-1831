@@ -1,5 +1,6 @@
 # typescript-1831
 Workspace for Microsoft/Typescript #1831
+
 https://github.com/Microsoft/TypeScript/issues/18311#issuecomment-327884760
 
 ### Reproduction Steps:
@@ -19,7 +20,7 @@ TSC successfully resolves the module location using the `--paths` configuration,
 You will notice that `./bundles/broken.d.ts` declares a module by the name of `index` but not `@bundles/broken`
 
 ### Workaround:
-We can coerce the desired behavior by creating a folder called `@bundles` within the `./src/workaround` folder and then re-exporting the contents of folder's root `index.ts`
+We can coerce the desired behavior by creating a folder called `@bundles` within the `./src/workaround` folder and then re-exporting the contents of the folder's root `index.ts`
 
 You will notice that `./bundles/workaround.d.ts` contains an additional declaration for `@bundles/workaround` as a result of the hacky folder structure.
 
