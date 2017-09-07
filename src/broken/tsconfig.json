@@ -1,0 +1,7 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "rootDir": "./broken",
+        "outFile": "../../bundles/broken.js"
+    }
+}

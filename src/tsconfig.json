@@ -1,0 +1,15 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "target": "es5",
+        "module": "system",
+        "paths": {
+            "@bundles/*": [
+                "../bundles/*"
+            ]
+        },
+        "rootDir": ".",
+        "baseUrl": ".",
+        "declaration": true
+    }
+}

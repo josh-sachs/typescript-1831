@@ -1,0 +1,8 @@
+{
+    "version": "1.0.0",
+    "name": "typescript-1831",
+    "private": true,
+    "devDependencies": {
+        "typescript": "2.5.2"
+    }
+}
